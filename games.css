@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: #fffbf1;
+}
+
+.header {
+    min-height: 30em;
+    width: 100%;
+    background-image: url(assets/valo_1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+
+.body {
+    min-height: 30em;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative; 
+
+}
+
+.footer {
+    min-height: 30em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #B78460;
+
+}
+
+nav {
+    display: flex;
+    padding: 0 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff3446;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.container {
+    height: auto;
+    width: 30%;
+    margin: auto;
+    padding: 1rem 5rem 5rem;
+    text-align: center;
+    background-color: none;
+}
+
+.container-footer {
+    height: auto;
+    width: 40%;
+    padding: 5rem 5rem;
+    text-align: left;
+    color: #fff;
+
+}
+
+.container h1 {
+    padding: 1rem 0;
+    font-size: 3em;
+    color: #fff;
+}
+
+.container p {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.character {
+    display: inline-block;
+    width: 268px;
+    height: 640px;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 9px 26px rgba(20, 121, 255, 0.25);
+    background-color: #fff;
+    position: relative;
+}
+
+.character img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color:burlywood;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 1rem;
+    
+}
+
+.overlay:hover {
+    opacity: 1;
+}
