@@ -12,7 +12,6 @@ body{
 .header {
     min-height: 30em;
     width: 100%;
-    background-image: url(assets/valo_1.jpg);
     background-position: center;
     background-size: cover;
     position: relative; 
@@ -35,7 +34,6 @@ body{
     justify-content: center;
     position: relative;
     background-color: #B78460;
-
 }
 
 nav {
@@ -43,6 +41,10 @@ nav {
     padding: 0 6%;
     justify-content: space-between;
     align-items: center;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    -webkit-mask-image: linear-gradient(to bottom,#202020 70%,transparent 100%);
+    mask-image: linear-gradient(to bottom,#202020 70%,transparent 100%);
 }
 
 nav img {
@@ -101,11 +103,13 @@ nav img {
     padding: 1rem 0;
     font-size: 3em;
     color: #fff;
+    text-shadow: 0 0 0.15em #202020;
 }
 
 .container p {
     font-size: 1.3em;
     color: #fff;
+    text-shadow: 0 0 0.15em #202020;
 }
 
 .character {
@@ -117,6 +121,7 @@ nav img {
     box-shadow: 0 9px 26px rgba(20, 121, 255, 0.25);
     background-color: #fff;
     position: relative;
+
 }
 
 .character img {
@@ -134,7 +139,7 @@ nav img {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     color:burlywood;
-    font-size: 1em;
+    font-size: 0.8em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +149,17 @@ nav img {
     opacity: 0;
     transition: opacity 0.25s;
     border-radius: 1rem;
-    
+
+}
+
+.overlay p {
+    padding: 0 2rem 0;
+}
+
+.overlay ul {
+    text-align: left;
+    font-weight: bold;
+    padding: 0 5rem 0;
 }
 
 .overlay:hover {

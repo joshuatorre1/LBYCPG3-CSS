@@ -26,6 +26,10 @@ nav {
     padding: 0 6%;
     justify-content: space-between;
     align-items: center;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    -webkit-mask-image: linear-gradient(to bottom,#202020 70%,transparent 100%);
+    mask-image: linear-gradient(to bottom,#202020 70%,transparent 100%);
 }
 
 nav img {
@@ -111,9 +115,11 @@ nav img {
 
 .right-container h1 {
     font-size: 6em;
-    color: #c5d154;
+    /* color: #c5d154; */
+    color: #ff2c2c;
     text-align: right;
     padding: 4% 0;
+    text-shadow: 0 0 0.15em #202020;
 }
 
 .right-container h2 {
@@ -122,4 +128,5 @@ nav img {
     color: #fff;
     text-align: right;
     padding: 4% 0;
+    text-shadow: 0 0 0.15em #202020;
 }

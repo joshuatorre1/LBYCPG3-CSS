@@ -22,8 +22,8 @@
                     <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="valorant.html">VALORANT</a></li>
-                        <li><a href="ml.html">MOBILE LEGENDS</a></li>
-                        <li><a href="genshin.html">GENSHIN IMPACT</a></li>
+                        <li><a href="godOfWar.html">GOD OF WAR</a></li>
+                        <li><a href="p5R.html">PERSONA 5 ROYAL</a></li>
                     </ul>
                 </div>
             </nav>
@@ -33,11 +33,11 @@
                     <div class="box active" onclick="valo_bg()">
                         <a><img src="assets/valo_box.png"></a>
                     </div>
-                    <div class="box" onclick="genshin_bg()">
-                        <a><img src="assets/genshin_box.jpeg"></a>
+                    <div class="box" onclick="p5R_bg()">
+                        <a><img src="assets/p5R_box.jpg"></a>
                     </div>
-                    <div class="box" onclick="ml_bg()">
-                        <a><img src="assets/ml_box.jpg"></a>
+                    <div class="box" onclick="godOfWar_bg()">
+                        <a><img src="assets/godOfWar_box.jpg"></a>
                     </div>
                 </div>
                 <!-- Right -->
@@ -67,15 +67,15 @@
             title.innerHTML = "We Are Valorant";
             subtitle.innerHTML =  "Valorant is a free-to-play first-person hero shooter developed and published by Riot Games, for Microsoft Windows. First teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April 7, 2020, followed by an official release on June 2, 2020.";
         }
-        function genshin_bg() {
-            video.setAttribute('src', "assets/genshin_bg.mp4");
-            title.innerHTML = "Step Into a Vast Magical World of Adventure";
-            subtitle.innerHTML =  "An open-world action RPG";
+        function p5R_bg() {
+            video.setAttribute('src', "assets/p5R_bg.mp4");
+            title.innerHTML = "Let Us Start The Game";
+            subtitle.innerHTML =  "Persona 5 Royal is a RPG developed by Atlus and is the sixth installment in the Persona series. It takes place in modern day Tokyo and follows a high school student known as Joker who transfers to a new school after being falsely accused. Over the course of the year, he and other students awaken to a special power, becoming the vigilantes known as the Phantom Thieves of Hearts";
         }
-        function ml_bg() {
-            video.setAttribute('src', "assets/lunox_bg.mp4");
-            title.innerHTML = "The brand new 5v5 MOBA showdown";
-            subtitle.innerHTML =  "Mobile Legends: Bang Bang, commonly referred to as ML or MLBB, is a mobile multiplayer online battle arena game developed and published by Moonton, a subsidiary of ByteDance.";
+        function godOfWar_bg() {
+            video.setAttribute('src', "assets/godOfWar_bg.mp4");
+            title.innerHTML = "You Cannot Change";
+            subtitle.innerHTML =  "God of War is an action-adventure developed by Santa Monica Studio and published by Sony Interactive Entertainment. It is the eighth installment in the God of War series set in ancient Scandinavia in the realm of Midgard. It follows Kratos, the former Greek God of War, and his son, Atreus, as they journey to fulfill his wife's request to spread her ashes from the highest peak of the nine realms";
         }
             
         for(var i = 0; i < box.length; i++) {
